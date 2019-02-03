@@ -58,7 +58,8 @@ defmodule Wobserver.Mixfile do
     [
       extra_applications: [
         :logger,
-        :httpoison
+        :httpoison,
+        :poison
       ],
       mod: {Wobserver.Application, []}
     ]
