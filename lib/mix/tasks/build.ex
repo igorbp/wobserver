@@ -26,7 +26,6 @@ defmodule Mix.Tasks.Build do
     pack()
     IO.puts(" \e[32msuccess\e[0m")
     execute("Compiling wobserver", "mix", ["compile"])
-    execute("Building documentation", "mix", ["docs"])
     execute("Packaging wobserver", "mix", ["hex.build"])
 
     IO.puts("\n\e[44mwobserver\e[0m packaged.")
